@@ -5,6 +5,7 @@ build them. The goal is to save time: structures that are tedious to build or
 hard to find (surface slabs, doped oxides, published geometries) are stored
 once, documented, and referenced.
 
+
 Every structure has its own folder with a `POSCAR` and a `metadata.json`
 that records what it is, how it was made, and where it came from.
 
