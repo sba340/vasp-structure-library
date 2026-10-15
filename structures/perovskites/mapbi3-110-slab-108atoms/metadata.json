@@ -1,0 +1,22 @@
+{
+  "name": "MAPbI3 (110) slab, 108 atoms",
+  "category": "perovskite",
+  "description": "Surface slab of methylammonium lead iodide (CH3NH3PbI3), labelled (110) by its creator, with 12 Pb in three layers, 8 methylammonium cations and 32 I (108 atoms). Cell is about 12.31 x 12.83 x 32.32 Angstrom with roughly 18.5 Angstrom of vacuum along c.",
+  "source_type": "own-calculation",
+  "date_added": "2026-10-15",
+  "added_by": "Sahar",
+  "composition": {
+    "formula": "C8 N8 H48 Pb12 I32",
+    "atoms": 108,
+    "pb_layers": 3
+  },
+  "calculation": {
+    "code": "VASP",
+    "notes": "Species order in the file is C, N, H, Pb, I (8, 8, 48, 12, 32 atoms); match the POTCAR order accordingly. Cartesian coordinates, no selective dynamics, so all atoms are free. The original header line reads 'MAPI Tetragonal (800 eV)'. The functional, dispersion correction, k-points, and whether the slab is relaxed are not recorded in the file; add them here if known."
+  },
+  "modifications": "A stray character ('s') after the z coordinate of the second atom in the submitted file (9.403887s) was removed so the file can be read by VASP and ASE. No other change was made. The repaired position gives sensible bond lengths for that methylammonium (C-H 1.10 Angstrom, C-N 1.48 Angstrom).",
+  "permissions": "Own structure, created by the repository owner.",
+  "notes": "Surface plane (110): the stacking direction (c axis) of this slab is the [110] direction of the 48-atom tetragonal cell, so the surface plane contains the [1-10] and [001] directions. The slab construction is documented by the owner; the surface terminations were not independently checked. Three Pb layers lie at about z = 0.2, 6.4 and 12.5 Angstrom, and a few atoms have slightly negative z, which is fine in a periodic cell.",
+  "derived_from": "structures/perovskites/mapbi3-tetragonal-bulk-96atoms",
+  "lineage": "48-atom tetragonal cell (structures/perovskites/mapbi3-tetragonal-48atoms), then the 96-atom (110)-oriented bulk cell, then this slab. The in-plane lattice vectors and the tilt of the c vector are identical to the 96-atom cell, and the cell height differs by exactly 20 Angstrom."
+}

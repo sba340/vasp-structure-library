@@ -1,0 +1,24 @@
+{
+  "name": "MAPbI3 (110)-oriented bulk cell, 96 atoms",
+  "category": "perovskite",
+  "description": "Periodic bulk cell of methylammonium lead iodide (CH3NH3PbI3) with 8 formula units (8 Pb, 8 methylammonium cations, 24 I) and no vacuum region. Cell is about 12.31 x 12.83 x 12.32 Angstrom. It is the 48-atom tetragonal cell re-expressed with axes along the [110] and [1-10] diagonals of the ab plane plus the c axis, and it was used to cut the (110) slab.",
+  "source_type": "own-calculation",
+  "date_added": "2026-10-15",
+  "added_by": "Sahar",
+  "composition": {
+    "formula": "C8 N8 H48 Pb8 I24",
+    "atoms": 96,
+    "formula_units": 8
+  },
+  "calculation": {
+    "code": "VASP",
+    "notes": "Species order in the file is C, N, H, Pb, I (8, 8, 48, 8, 24 atoms); match the POTCAR order accordingly. Direct coordinates, no selective dynamics. The original header line reads 'MAPI Tetragonal (800 eV)'. The functional, dispersion correction, k-points and whether the structure is relaxed are not recorded in the file; add them here if known."
+  },
+  "permissions": "Own structure, created by the repository owner.",
+  "notes": "Periodic cell with no vacuum along any axis (largest empty gap about 2 Angstrom), so it is a bulk cell and not a slab. The (110) label refers to the surface normal: the z axis of this cell lies along the [110] direction of the 48-atom tetragonal cell. The (110) slab in this library was cut from this cell.",
+  "derived_from": "structures/perovskites/mapbi3-tetragonal-48atoms",
+  "transformation": "New cell axes (a, b, c of the 96-atom file) = (-a+b), c, (a+b) of the 48-atom tetragonal cell. All six cell parameters of the 96-atom file match this transformation of the 48-atom cell, and the volume is exactly twice as large. Atomic positions were not compared.",
+  "derived_entries": [
+    "structures/perovskites/mapbi3-110-slab-108atoms"
+  ]
+}

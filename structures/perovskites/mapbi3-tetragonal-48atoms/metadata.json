@@ -1,0 +1,23 @@
+{
+  "name": "MAPbI3 tetragonal cell, 48 atoms (starting structure)",
+  "category": "perovskite",
+  "description": "Tetragonal-phase methylammonium lead iodide (CH3NH3PbI3) cell with 4 formula units (4 Pb, 4 methylammonium cations, 12 I), P1 symmetry. Cell is 8.695 x 8.715 x 12.835 Angstrom. This is the parent structure from which the 96-atom (110)-oriented bulk cell and the (110) slab in this library were built.",
+  "source_type": "own-calculation",
+  "date_added": "2026-10-15",
+  "added_by": "Sahar",
+  "composition": {
+    "formula": "C4 N4 H24 Pb4 I12",
+    "atoms": 48,
+    "formula_units": 4
+  },
+  "calculation": {
+    "code": "VASP",
+    "notes": "Converted from the supplied CIF (exported from VESTA, space group P1) to POSCAR with direct coordinates and species order C, N, H, Pb, I (4, 4, 24, 4, 12 atoms); match the POTCAR order accordingly. The original CIF is kept next to the POSCAR as structure.cif. The phase label in the CIF reads 'MAPI Tetragonal (800 eV)'. The functional, dispersion correction, k-points, and whether the structure is relaxed are not recorded in the file; add them here if known."
+  },
+  "derived_entries": [
+    "structures/perovskites/mapbi3-tetragonal-bulk-96atoms",
+    "structures/perovskites/mapbi3-110-slab-108atoms"
+  ],
+  "permissions": "Structure supplied by the repository owner. The original source of this starting geometry (own relaxation, paper, or database) has not been recorded; add the reference here if it came from a publication.",
+  "notes": "Cell angles are 89.63, 89.50 and 89.96 degrees, so the cell is only approximately tetragonal."
+}
