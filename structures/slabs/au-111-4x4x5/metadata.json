@@ -1,0 +1,26 @@
+{
+  "name": "Au(111) slab, 4x4, 5 layers",
+  "category": "slab",
+  "description": "Orthogonal 4x4 Au(111) surface cell with 5 layers (80 atoms), 15 Angstrom of vacuum above the slab only, and the bottom two layers frozen with selective dynamics.",
+  "source_type": "generated",
+  "date_added": "2026-10-15",
+  "added_by": "Sahar",
+  "generator": {
+    "script": "generators/fcc111_slab.py",
+    "command": "python generators/fcc111_slab.py --output structures/slabs/au-111-4x4x5/POSCAR",
+    "parameters": {
+      "element": "Au",
+      "lattice_constant_angstrom": 4.078,
+      "size": [4, 4, 5],
+      "vacuum_angstrom": 15.0,
+      "fixed_layers": 2
+    }
+  },
+  "calculation": {
+    "relaxed": false,
+    "code": "VASP",
+    "notes": "Ideal bulk-terminated geometry. Check the lattice constant against your own functional before production runs."
+  },
+  "permissions": "Generated in this repository.",
+  "notes": "32 of 80 atoms are fixed (F F F). Surface cell is orthogonal, so ny must be even."
+}

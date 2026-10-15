@@ -1,0 +1,36 @@
+{
+  "name": "ITO (222) surface slab, OH-terminated, In84Sn12O144H24",
+  "category": "oxide",
+  "description": "Rectangular periodic slab of tin-doped indium oxide (ITO) exposing the (222) surface, with surface oxygen atoms saturated by hydrogen to give an OH-terminated surface. Built from bulk cubic In2O3 with random Sn substitution on cation sites (Sn/In = 0.14). Used in the source paper as the substrate for phosphonic acid adsorption.",
+  "source_type": "literature",
+  "date_added": "2026-10-15",
+  "added_by": "Sahar",
+  "reference": {
+    "authors": "Paramonov, P. B., Paniagua, S. A., Hotchkiss, P. J., Jones, S. C., Armstrong, N. R., Marder, S. R., Bredas, J.-L.",
+    "title": "Theoretical Characterization of the Indium Tin Oxide Surface and of Its Binding Sites for Adsorption of Phosphonic Acid Monolayers",
+    "journal": "Chem. Mater.",
+    "year": "2008",
+    "volume": "20",
+    "issue": "16",
+    "pages": "5131-5133",
+    "doi": "10.1021/cm8014622",
+    "location_in_source": "Supporting Information, Table S-1 (POSCAR for VASP)"
+  },
+  "composition": {
+    "formula": "In84 Sn12 O144 H24",
+    "atoms": 264,
+    "sn_to_in_ratio": 0.14,
+    "sn_distribution": "random, generated with a random number generator (per the paper)"
+  },
+  "calculation": {
+    "relaxed": true,
+    "code": "VASP",
+    "functional": "PBE",
+    "pseudopotentials": "PAW",
+    "encut_ev": 300,
+    "notes": "Geometry as optimized by the original authors at the PBE level (300 eV plane-wave cutoff, PAW). Cell is 24.7867 x 14.3156 x 30.0 Angstrom, orthogonal, with the slab occupying roughly z = 0 to 10 Angstrom. Coordinates are Cartesian. No selective dynamics flags are present, so all atoms are free. The Sn positions are one specific random realization, not an ordered or minimum-energy arrangement. Species order in the file is In, O, Sn, H (84, 144, 12, 24 atoms); match the POTCAR order accordingly."
+  },
+  "modifications": "Coordinates and cell are identical to Table S-1 of the SI (checked numerically for all 264 atoms). The species line and comment line were added when converting the SI table into a POSCAR; line endings were normalized and a typo in the comment line ('Chen.' to 'Chem.') was corrected.",
+  "permissions": "Atomic coordinates taken from the freely available Supporting Information of the cited paper. Cite the paper when using this structure. The article and SI PDFs are not redistributed in this repository.",
+  "notes": "Surface chemistry: under-coordinated In sites and surface OH groups are the chemically active sites identified by the authors. Verify the Sn/In ratio and slab thickness are appropriate for your application before use."
+}

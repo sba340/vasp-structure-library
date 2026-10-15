@@ -1,0 +1,23 @@
+{
+  "name": "Short descriptive name, e.g. ITO bulk 80-atom cell",
+  "category": "slab | oxide | bulk | molecule | interface | 2d | other",
+  "description": "One or two sentences: what the structure is and what it is useful for.",
+  "source_type": "generated | literature | own-calculation | database",
+  "date_added": "YYYY-MM-DD",
+  "added_by": "Your name",
+  "reference": {
+    "authors": "Surname, A. and Surname, B.",
+    "title": "Full paper title",
+    "journal": "Journal name",
+    "year": "2024",
+    "doi": "10.xxxx/xxxxx"
+  },
+  "calculation": {
+    "relaxed": false,
+    "code": "VASP",
+    "functional": "PBE",
+    "notes": "Any detail that affects reuse: DFT+U, spin, k-points, ENCUT, dopant concentration."
+  },
+  "permissions": "State where the file came from and whether reuse is permitted (supporting information, own data, public database with license).",
+  "notes": "Free text: fixed layers, vacuum, magnetic ordering, known issues."
+}
