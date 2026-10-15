@@ -49,7 +49,4 @@ publications must include the full reference and DOI.
 If you use a structure that originates from a publication, cite the original
 paper listed in its `metadata.json` and in `CATALOG.md`.
 
-## License
 
-Code is released under the MIT license. Structure files taken from
-publications remain subject to the terms of their original sources.
